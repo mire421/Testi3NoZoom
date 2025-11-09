@@ -170,8 +170,23 @@
       const ort = document.getElementById('ort').value.trim().toLowerCase();
       const plzField = document.getElementById('plz');
       const ortPlzMap = {
-        "stuttgart": "70173", "esslingen": "73728", "filderstadt": "70794", "waiblingen": "71332"
-        // ... (verkürzt für Übersichtlichkeit)
+       "aichtal": "72631", "aichwald": "73773", "altbach": "73776",
+    "altdorf": "72655", "altenriet": "72657", "baltmannsweiler": "73666",
+    "bempflingen": "72658", "beuren": "72660", "bissingen": "73266",
+    "deizisau": "73779", "denkendorf": "73770", "dettingen": "73265",
+    "erkenbrechtsweiler": "73268", "esslingen": "73728", "filderstadt": "70794",
+    "frickenhausen": "72636", "großbettlingen": "72663", "hochdorf": "73269",
+    "holzmaden": "73271", "kirchheim unter teck": "73230", "kohlberg": "72664",
+    "köngen": "73257", "leinfelden-echterdingen": "70771", "lenningen": "73252",
+    "lichtenwald": "73669", "neckartailfingen": "72666", "neckartenzlingen": "72654",
+    "neidlingen": "73272", "neuffen": "72639", "neuhausen": "73765",
+    "notzingen": "73274", "nürtingen": "72622", "oberboihingen": "72644",
+    "ohmden": "73275", "ostfildern": "73760", "owen": "73277", "plochingen": "73207",
+    "reichenbach an der fils": "73262", "schlaitdorf": "72667", "unterensingen": "72669",
+    "weilheim": "73235", "wendlingen": "73240", "wernau": "73249", "wolfschlugen": "72649",
+    "stuttgart": "70173", "fellbach": "70734", "waiblingen": "71332", "ludwigsburg": "71634",
+    "böblingen": "71032", "sindelfingen": "71063", "kornwestheim": "70806",
+    "backnang": "71522", "gerlingen": "70839", "korntal-münchingen": "70825"
       };
       plzField.value = ortPlzMap[ort] || "";
     }
@@ -239,7 +254,7 @@
       addCenteredText('zahlbar innerhalb von 14 Tagen', 10, true);
       addLeftText(`Bereits gezahlt: ${parseFloat(data.zahlung).toFixed(2)} EUR`);
       y += 2;
-      addLeftText('Es erfolgt in jedem Fall eine Prüfung, ob bereits Forderungen gegen Sie gerichtet wurden. Die Begleichung der Forderung ohne konkrete Zuordnung Ihrer Identität stellt keine Erfüllung dar. Das Fahren ohne gültigen Fahrausweis stellt eine Straftat gem. § 265a StGB dar. Es kann zu strafrechtlichen Konsequenzen kommen. Ihre Daten werden für die Bearbeitung des erhöhten Beförderungsentgeltes gemäß der DSGVO verarbeitet.', 8);
+      addLeftText('Es erfolgt in jedem Fall eine Prüfung, ob bereits Forderungen gegen Sie gerichtet wurden. Die Begleichung der Forderung ohne konkrete Zuordnung Ihrer Identität stellt keine Erfüllung dar. Das Fahren ohne gültigen Fahrausweis stellt eine Straftat gem. § 265a StGB dar. Es kann zu strafrechtlichen Konsequenzen kommen. Ihre Daten werden für die Bearbeitung des erhöhten Beförderungsentgeltes gemäß der DSGVO verarbeitet.', 8);
       y += 2;
       addCenteredText(`Gültig als Fahrschein am ${formatDate(data.datum)} bis Fahrtende`, 9, true);
       y += 2;
